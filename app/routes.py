@@ -34,7 +34,7 @@ def view_post(post_id):
 
     if not post:
         # Si el post no existe, mostrar error 404
-        return render_template("404.html"), 500
+        return render_template("404.html"), 404
 
     return render_template("post.html", post=post, title=f"{post.title} - DevBlog")
 
